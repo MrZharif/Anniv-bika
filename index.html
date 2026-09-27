@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bikayda | Water Dragon VTuber</title>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=JetBrains+Mono:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="thread-nav">
+    <a href="#hero" class="thread-dot" data-label="Entrance"></a>
+    <a href="#reveal" class="thread-dot" data-label="Profile"></a>
+    <a href="#lore" class="thread-dot" data-label="Lore"></a>
+  </nav>
+
+  <div class="code-input-overlay" id="codeOverlay">
+    <div class="code-input-box">
+      <p class="code-label">ENTER ACCESS CODE:</p>
+      <input type="text" id="codeInput" class="code-field" placeholder="••••" maxlength="4" inputmode="numeric">
+      <p class="code-hint">Type your code...</p>
+    </div>
+  </div>
+
+  <div class="birthday-modal" id="birthdayModal">
+    <div class="birthday-content">
+      <button class="birthday-close" onclick="closeBirthday()">✕</button>
+      <div class="confetti-container"></div>
+      <div class="birthday-icon">
+        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+          <path d="M12 2l2.4 5.2L20 8l-4 4.2L17 18l-5-2.8L7 18l1-5.8L4 8l5.6-0.8L12 2z"/>
+        </svg>
+      </div>
+      <h1 class="birthday-title">HAPPY BIRTHDAY, BIKAYDA!</h1>
+      <p class="birthday-subtitle">Semoga ombak membawa kebahagiaan & kebebasan tanpa batas!</p>
+      <div class="birthday-message">
+        <p>Terima kasih telah bernyanyi dan menemani hari-hari para Kay-darat dengan ceria.</p>
+        <p>Teruslah berlayar dan menggapai impianmu dengan caramu sendiri!</p>
+      </div>
+      <button class="birthday-bonus-btn" id="secretGiftBtn" type="button">
+        <span>Secret Gift</span>
+      </button>
+    </div>
+  </div>
+
+  <div class="bsod-overlay" id="bsodOverlay">
+    <div class="bsod-wrap">
+      <div class="bsod-face">:(</div>
+      <h1 class="bsod-h1">Your PC ran into a problem and needs to restart.</h1>
+      <div class="bsod-progress-row">
+        <span class="bsod-progress-num" id="bsodPct">0</span><span class="bsod-progress-num">% complete</span>
+      </div>
+      <p class="bsod-stall-note" id="bsodStallNote">It's taking longer than usual to restart your PC.</p>
+    </div>
+    <div class="bsod-esc-hint">(psst — just press ESC)</div>
+  </div>
+
+  <section class="hero" id="hero">
+    <video class="hero-bg-video" autoplay muted loop playsinline>
+      <source src="header.mp4" type="video/mp4">
+    </video>
+    <div class="hero-vignette"></div>
+    <div class="hero-content">
+      <h1 class="hero-name">BIKAYDA</h1>
+      <p class="hero-title">Water Dragon VTuber | Melarikan Diri Menuju Kebebasan</p>
+    </div>
+  </section>
+
+  <section class="reveal" id="reveal">
+    <div class="section-head">
+      <h2>MEET BIKAYDA</h2>
+    </div>
+    <div class="reveal-grid">
+      <figure class="trailer-frame">
+        <img class="trailer-video" src="model.png" alt="Bikayda">
+      </figure>
+      <div class="bio-card">
+        <div class="bio-card-frame">
+          <p class="bio-kicker">Main Character</p>
+          <h3 class="bio-name">Bikayda</h3>
+          <dl class="bio-stats">
+            <dt>Nama Lengkap</dt>
+            <dd>Bikaida (Bika)</dd>
+            <dt>Tanggal Lahir</dt>
+            <dd>5 Mei</dd>
+            <dt>Tinggi Badan</dt>
+            <dd>195 cm (termasuk sepatu)</dd>
+            <dt>Bahasa</dt>
+            <dd>Indonesia, Inggris, kadang Medhog</dd>
+            <dt>Nama Penggemar</dt>
+            <dd>Kay-darat</dd>
+          </dl>
+          <p class="bio-desc">
+            Putri naga air yang kabur dari istana kuno di dasar samudra demi menikmati kebebasan dunia manusia. Siap menemani streaming dengan obrolan seru dan lagu-lagu merdu.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<section class="story" id="lore">
+    <div class="section-head">
+      <h2>LORE</h2>
+    </div>
+    <div class="story-lore">
+      <div class="lore-box">
+        <p>Bikayda adalah sesosok naga air yang berasal dari kedalaman samudra. Ia sempat dikurung atau "diistirahatkan" sebelum akhirnya berhasil lepas dan debut menjadi seorang VTuber.</p>
+        
+        <p>Kehidupannya di dunia bawah laut digambarkan penuh dengan aturan yang mengekang, sehingga ia memutuskan untuk "kabur" ke dunia manusia tepatnya ke kota metropolitan demi mencari kebebasan, yang kini ia sebut sebagai "akuarium unlimited".</p>
+        
+        <p>Sebagai seekor naga, ia memiliki keunikan biologis seperti kemampuan beregenerasi dan membelah diri, serta kegemaran menyantap koral. Dalam perjalanannya, ia juga sering berinteraksi dengan figur yang ia panggil sebagai Bapak atau Mama, yang turut berperan dalam proses penciptaan wujud virtualnya.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="staff-only">
+    <button class="staff-btn" id="staffBtn">pesan dari gwehj</button>
+  </section>
+
+  <footer class="site-footer">
+    <p style="margin-top: 8px;">#BikaydaCh | #Kaydarat | #WaterDragon</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
